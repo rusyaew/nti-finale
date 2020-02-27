@@ -1,0 +1,146 @@
+Сеть была просканирована nmap-ом и получены следующие результаты:
+  Nmap scan report for 10.0.11.1
+  Host is up (0.00071s latency).
+  All 1000 scanned ports on 10.0.11.1 are filtered
+  MAC Address: 00:50:56:8F:9C:A3 (VMware)
+
+  Nmap scan report for 10.0.11.2
+  Host is up (0.00068s latency).
+  Not shown: 999 closed ports
+  PORT   STATE SERVICE VERSION
+  22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+  MAC Address: 00:50:56:03:16:A4 (VMware)
+  Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+  Nmap scan report for 10.0.11.12
+  Host is up (0.00044s latency).
+  Not shown: 999 closed ports
+  PORT   STATE SERVICE VERSION
+  22/tcp open  ssh     OpenSSH 7.4p1 Debian 10+deb9u6 (protocol 2.0)
+  MAC Address: 00:50:56:03:17:E0 (VMware)
+  Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+  Nmap scan report for 10.0.11.13
+  Host is up (0.0011s latency).
+  Not shown: 996 closed ports
+  PORT     STATE SERVICE         VERSION
+  22/tcp   open  ssh             (protocol 2.0)
+  53/tcp   open  tcpwrapped
+  80/tcp   open  http
+  8888/tcp open  sun-answerbook?
+  2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+  ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+  SF-Port22-TCP:V=7.40%I=7%D=2/27%Time=5E577088%P=x86_64-pc-linux-gnu%r(NULL
+  SF:,142,"SSH-2\.0-dropbear\r\n\0\0\x01,\x04\x14\xfaL\xe4O\xedR\xd2zN\xc1\x
+  SF:acA\xf2\xe8nO\0\0\0\x82curve25519-sha256,curve25519-sha256@libssh\.org,
+  SF:diffie-hellman-group14-sha256,diffie-hellman-group14-sha1,kexguess2@mat
+  SF:t\.ucc\.asn\.au\0\0\0\x07ssh-rsa\0\0\0\x15aes128-ctr,aes256-ctr\0\0\0\x
+  SF:15aes128-ctr,aes256-ctr\0\0\0\x17hmac-sha1,hmac-sha2-256\0\0\0\x17hmac-
+  SF:sha1,hmac-sha2-256\0\0\0\x04none\0\0\0\x04none\0\0\0\0\0\0\0\0\0\0\0\0\
+  SF:0T\x9f\xf0\xc0");
+  ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+  SF-Port80-TCP:V=7.40%I=7%D=2/27%Time=5E577088%P=x86_64-pc-linux-gnu%r(GetR
+  SF:equest,2CD,"HTTP/1\.0\x20200\x20OK\r\nConnection:\x20close\r\nETag:\x20
+  SF:\"3e0-20c-5e13648d\"\r\nLast-Modified:\x20Mon,\x2006\x20Jan\x202020\x20
+  SF:16:47:09\x20GMT\r\nDate:\x20Thu,\x2027\x20Feb\x202020\x2007:32:24\x20GM
+  SF:T\r\nContent-Type:\x20text/html\r\nContent-Length:\x20524\r\n\r\n<\?xml
+  SF:\x20version=\"1\.0\"\x20encoding=\"utf-8\"\?>\n<!DOCTYPE\x20html\x20PUB
+  SF:LIC\x20\"-//W3C//DTD\x20XHTML\x201\.1//EN\"\x20\"http://www\.w3\.org/TR
+  SF:/xhtml11/DTD/xhtml11\.dtd\">\n<html\x20xmlns=\"http://www\.w3\.org/1999
+  SF:/xhtml\">\n<head>\n<meta\x20http-equiv=\"Cache-Control\"\x20content=\"n
+  SF:o-cache,\x20no-store,\x20must-revalidate\"\x20/>\n<meta\x20http-equiv=\
+  SF:"refresh\"\x20content=\"0;\x20URL=/cgi-bin/luci/\"\x20/>\n</head>\n<bod
+  SF:y\x20style=\"background-color:\x20white\">\n<a\x20style=\"color:\x20bla
+  SF:ck;\x20font-family:\x20arial,\x20helvetica,\x20sans-serif;\"\x20href=\"
+  SF:/cgi-bin/luci/\">LuCI\x20-\x20Lua\x20Configuration\x20Interface</a>\n</
+  SF:body>\n</html>\n")%r(HTTPOptions,2CD,"HTTP/1\.0\x20200\x20OK\r\nConnect
+  SF:ion:\x20close\r\nETag:\x20\"3e0-20c-5e13648d\"\r\nLast-Modified:\x20Mon
+  SF:,\x2006\x20Jan\x202020\x2016:47:09\x20GMT\r\nDate:\x20Thu,\x2027\x20Feb
+  SF:\x202020\x2007:32:24\x20GMT\r\nContent-Type:\x20text/html\r\nContent-Le
+  SF:ngth:\x20524\r\n\r\n<\?xml\x20version=\"1\.0\"\x20encoding=\"utf-8\"\?>
+  SF:\n<!DOCTYPE\x20html\x20PUBLIC\x20\"-//W3C//DTD\x20XHTML\x201\.1//EN\"\x
+  SF:20\"http://www\.w3\.org/TR/xhtml11/DTD/xhtml11\.dtd\">\n<html\x20xmlns=
+  SF:\"http://www\.w3\.org/1999/xhtml\">\n<head>\n<meta\x20http-equiv=\"Cach
+  SF:e-Control\"\x20content=\"no-cache,\x20no-store,\x20must-revalidate\"\x2
+  SF:0/>\n<meta\x20http-equiv=\"refresh\"\x20content=\"0;\x20URL=/cgi-bin/lu
+  SF:ci/\"\x20/>\n</head>\n<body\x20style=\"background-color:\x20white\">\n<
+  SF:a\x20style=\"color:\x20black;\x20font-family:\x20arial,\x20helvetica,\x
+  SF:20sans-serif;\"\x20href=\"/cgi-bin/luci/\">LuCI\x20-\x20Lua\x20Configur
+  SF:ation\x20Interface</a>\n</body>\n</html>\n")%r(RTSPRequest,79,"HTTP/1\.
+  SF:0\x20400\x20Bad\x20Request\r\nConnection:\x20Keep-Alive\r\nKeep-Alive:\
+  SF:x20timeout=20\r\nContent-Type:\x20text/html\r\n\r\n<h1>Bad\x20Request</
+  SF:h1>");
+  MAC Address: 00:50:56:03:17:E0 (VMware)
+
+  Nmap scan report for 10.0.11.14
+  Host is up (0.0021s latency).
+  Not shown: 997 closed ports
+  PORT     STATE SERVICE    VERSION
+  22/tcp   open  ssh        (protocol 2.0)
+  53/tcp   open  tcpwrapped
+  9999/tcp open  abyss?
+  2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+  ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+  SF-Port22-TCP:V=7.40%I=7%D=2/27%Time=5E577088%P=x86_64-pc-linux-gnu%r(NULL
+  SF:,142,"SSH-2\.0-dropbear\r\n\0\0\x01,\x04\x14Qq\x17;\xea\xbc\x12\x9cK\xf
+  SF:2\xdfb\x0c&\xdf;\0\0\0\x82curve25519-sha256,curve25519-sha256@libssh\.o
+  SF:rg,diffie-hellman-group14-sha256,diffie-hellman-group14-sha1,kexguess2@
+  SF:matt\.ucc\.asn\.au\0\0\0\x07ssh-rsa\0\0\0\x15aes128-ctr,aes256-ctr\0\0\
+  SF:0\x15aes128-ctr,aes256-ctr\0\0\0\x17hmac-sha1,hmac-sha2-256\0\0\0\x17hm
+  SF:ac-sha1,hmac-sha2-256\0\0\0\x04none\0\0\0\x04none\0\0\0\0\0\0\0\0\0\0\0
+  SF:\0\0\xf3\x04!l");
+  ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+  SF-Port9999-TCP:V=7.40%I=7%D=2/27%Time=5E57708E%P=x86_64-pc-linux-gnu%r(Ge
+  SF:nericLines,4,"\x0f\0\0\0");
+  MAC Address: 00:50:56:03:17:E0 (VMware)
+
+  Initiating Parallel DNS resolution of 1 host. at 01:34
+  Completed Parallel DNS resolution of 1 host. at 01:34, 0.05s elapsed
+  Initiating SYN Stealth Scan at 01:34
+  Scanning 10.0.11.1 [1000 ports]
+  Completed SYN Stealth Scan at 01:34, 21.13s elapsed (1000 total ports)
+  Initiating Service scan at 01:34
+  NSE: Script scanning 10.0.11.1.
+  Initiating NSE at 01:34
+  Completed NSE at 01:34, 0.00s elapsed
+  Initiating NSE at 01:34
+  Completed NSE at 01:34, 0.00s elapsed
+  Nmap scan report for 10.0.11.1
+  Host is up (0.00036s latency).
+  All 1000 scanned ports on 10.0.11.1 are filtered
+  MAC Address: 00:50:56:8F:9C:A3 (VMware)
+
+  Initiating SYN Stealth Scan at 01:34
+  Scanning 10.0.11.10 [1000 ports]
+  Discovered open port 22/tcp on 10.0.11.10
+  Completed SYN Stealth Scan at 01:34, 1.60s elapsed (1000 total ports)
+  Initiating Service scan at 01:34
+  Scanning 1 service on 10.0.11.10
+  Completed Service scan at 01:34, 0.01s elapsed (1 service on 1 host)
+  NSE: Script scanning 10.0.11.10.
+  Initiating NSE at 01:34
+  Completed NSE at 01:34, 0.00s elapsed
+  Initiating NSE at 01:34
+  Completed NSE at 01:34, 0.00s elapsed
+  Nmap scan report for 10.0.11.10
+  Host is up (0.000028s latency).
+  Not shown: 999 closed ports
+  PORT   STATE SERVICE VERSION
+  22/tcp open  ssh     OpenSSH 7.4p1 Debian 10+deb9u6 (protocol 2.0)
+  Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+  
+Далее, был прослушан весь траффик на интерфейсе ens224: tcpdump -i ens224
+И сделан его дамп: tshark -i ens224 -w out.pcap
+
+В траффике можно было видеть следующие пакеты:
+  02:58:19.263288 IP 10.0.11.12.580tp-alt > 10.0.11.12.48 > 192.168.1.2.http-alt: Flags [S], seq 1952291446, win 29200, options [mss 1460,sackOK,TS val 216920832 ecr 0,nop,wscale 7], length 0
+  02:58:19.263350 IP 192.168.1.2.http-alt > 10.0.11.12.58048: Flags [S.], seq 523495909, ack 1952291447, win 65160, options [mss 1460,sackOK,TS val 2020422429 ecr 216920832,nop,wscale 7], length 0
+  02:58:19.263490 IP 10.0.11.12.58048 > 192.168.1.2.http-alt: Flags [.], ack 1, win 229, options [nop,nop,TS val 216920832 ecr 2020422429], length 0
+  02:58:19.263537 IP 10.0.11.12.58048 > 192.168.1.2.http-alt: Flags [P.], seq 1:10, ack 1, win 229, options [nop,nop,TS val 216920832 ecr 2020422429], length 9: HTTP
+  02:58:19.263558 IP 10.0.11.12.58048 > 192.168.1.2.http-alt: Flags [F.], seq 10, ack 1, win 229, options [nop,nop,TS val 216920832 ecr 2020422429], length 0
+  02:58:19.263675 IP 192.168.1.2.http-alt > 10.0.11.12.58048: Flags [.], ack 10, win 509, options [nop,nop,TS val 2020422430 ecr 216920832], length 0
+  02:58:19.305090 IP 192.168.1.2.ht58048: Flags [.], ack 11, win 509, options [nop,nop,TS val 2020422471 ecr 216920832], length 0
+ 
+ Так же был обнаружен бинарный файл в прошивке первого роутера, устанавливающий соединение с 192.168.1.2
+ 
+ На основании вышеизлоденной информации можно сделать вывод, что зараженные роутеры - 10.0.11.12; 10.0.11.13; 10.0.11.14; а управляющий сервер - 192.168.1.2
