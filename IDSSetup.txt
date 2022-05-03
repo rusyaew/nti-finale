@@ -1,0 +1,6 @@
+We use the python module scapy to sniff the traffic.
+A number of security checks are performed on the packets.
+
+The checks are:
+  1. A volume check (if the length of a packet is less than 2000 bytes, then it's potentially dangerous)
+  2. An attempt to decode a packet with a default key, and if the key change signature (0x7E2A) is detected, we understand that the attacker has most likely established a connection with our machine.
