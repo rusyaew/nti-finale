@@ -1,0 +1,24 @@
+A way of encrypting data transmitted over a network:
+  There is a message and a key. Encryption is byte-by-by-byte exclusive or message-by-key.
+Key generation:
+  The first message and response is decrypted and encrypted with the default key.
+  At the first message, the attacker (client) transmits the opcode for the key change (0x7E2A) with an offset of 4 bytes and eight bytes, which are the first 8 bytes of the key. Then, on the OpenWrt (server) side, another 8 bytes are generated - the end of the key - and sent back to the attacker.
+  After the first message, a flag is thrown saying that the key was successfully changed, and the data encryption is performed using the new key.
+  The first eight bytes are generated as follows:
+    Initialization of a random number generator using the srand() function, parameter of which is the current number of seconds
+    2. Obtains a random number
+    3. Some kind of bit magic happens to it.
+    And so on eight times.
+
+Data exchange protocol:
+  The following set of bytes comes from the server:
+    1. The first two bytes are the command opcode
+    2. The next bytes are command arguments, their length depends on the opcode.
+  The client sends back:
+    1. The result of the command
+
+Commands:
+  1. the opcode is 0xCEFA. Arguments - none. What it does - nothing, it sends "OK" back.
+  2. opcode - 0x01AD. Arguments - 1 byte + string. 1st byte - the time that the downloaded binary will be executed. What it does - it downloads the binary (according to the string given in the argument) and executes it.
+  The opcode is 0xDD0C. The arguments are 1 byte + 1 byte + 4 bytes. 1st byte - number of connection attempts, 2nd byte - port, 3rd-6th bytes - destination_ip. What it does - creates specified number of connections to destination_ip on specified port. Something like Dos attack.
+  Opcode - 0xDEAD. Arguments - no. What it does - connects to the control server on port 5555, sends some bytes to the server, and terminates the program.
